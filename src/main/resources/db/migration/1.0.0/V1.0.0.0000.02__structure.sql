@@ -3,5 +3,5 @@ CREATE TABLE INSTITUTION.COURSE (
     Title VARCHAR NOT NULL,
     Description VARCHAR,
 )
-WITH "template=partitioned, backups=1, CACHE_NAME=Course,  VALUE_TYPE=com.redmath.institution.course.model.entity.Course,CACHE_GROUP=Courses, ATOMICITY=TRANSACTIONAL";
+WITH "template=partitioned, backups=1, CACHE_NAME=Course,  VALUE_TYPE=com.bizremark.institution.course.model.entity.Course,CACHE_GROUP=Courses, ATOMICITY=TRANSACTIONAL";
 CREATE INDEX COURSE_ID_IDX ON INSTITUTION.COURSE (ID);

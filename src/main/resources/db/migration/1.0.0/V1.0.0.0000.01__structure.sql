@@ -4,5 +4,5 @@ CREATE TABLE INSTITUTION.STUDENT (
     RollNumber VARCHAR NOT NULL,
     Dob TIMESTAMP NOT NULL
 )
-WITH "template=partitioned, backups=1, CACHE_NAME=Student,  VALUE_TYPE=com.redmath.institution.student.model.entity.Student,CACHE_GROUP=Students, ATOMICITY=TRANSACTIONAL";
+WITH "template=partitioned, backups=1, CACHE_NAME=Student,  VALUE_TYPE=com.bizremark.institution.student.model.entity.Student,CACHE_GROUP=Students, ATOMICITY=TRANSACTIONAL";
 CREATE INDEX STUDENT_ID_IDX ON INSTITUTION.STUDENT (ID);
