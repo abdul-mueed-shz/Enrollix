@@ -1,0 +1,19 @@
+server:
+  port: 8080
+  application:
+    name: institution
+
+spring:
+  application:
+    name: institution
+
+IGNITE-ADDRESS: 127.0.0.1:51500..51520
+
+db:
+  schema: Institution
+
+flyway:
+  enabled: true
+  url: jdbc:ignite:thin://localhost:10901/Institution
+  user:
+  password:

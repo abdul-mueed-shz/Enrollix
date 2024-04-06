@@ -1,0 +1,7 @@
+CREATE TABLE INSTITUTION.COURSE (
+	Id BIGINT PRIMARY KEY NOT NULL,
+    Title VARCHAR NOT NULL,
+    Description VARCHAR,
+)
+WITH "template=partitioned, backups=1, CACHE_NAME=Course,  VALUE_TYPE=com.redmath.institution.course.model.entity.Course,CACHE_GROUP=Courses, ATOMICITY=TRANSACTIONAL";
+CREATE INDEX COURSE_ID_IDX ON INSTITUTION.COURSE (ID);
